@@ -152,6 +152,10 @@ td {
    transition: all 0.2s ease-in-out;
 }
 
+.btn-delete:hover {
+   background-color: #ff4444;
+}
+
 .blob {
    position: fixed;
    width: 40vh;
