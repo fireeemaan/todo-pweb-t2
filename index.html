@@ -24,7 +24,7 @@
          <div class="blob"></div>
          <div class="blob2"></div>
          <div class="form-container">
-            <form class="add-form">
+            <div class="add-form">
                <input
                   type="text"
                   placeholder="Activity"
@@ -37,40 +37,44 @@
                   id="date-field"
                   required
                />
-               <button type="submit" id="btn-add">Add Activity</button>
-            </form>
+               <button id="btn-add" onclick="addData()">Add Activity</button>
+            </div>
          </div>
          <div class="table-container">
             <div class="table-wrapper">
-               <table>
-                  <tr>
-                     <th>No.</th>
-                     <th>Activity</th>
-                     <th>Due</th>
-                     <th>Status</th>
-                     <th></th>
-                  </tr>
-                  <tr>
-                     <td>1</td>
-                     <td>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin luctus magna ac dapibus malesuada. Suspendisse ac
-                        imperdiet tellus. Duis posuere.
-                     </td>
-                     <td>2023-10-15</td>
-                     <td>
-                        <input
-                           type="checkbox"
-                           name="status"
-                           class="cbx-status"
-                        />
-                     </td>
-                     <td>
-                        <button class="btn-delete">
-                           <i class="fa-solid fa-trash"></i>
-                        </button>
-                     </td>
-                  </tr>
+               <table id="todo-table">
+                  <thead>
+                     <tr>
+                        <th>No.</th>
+                        <th>Activity</th>
+                        <th>Due</th>
+                        <th>Status</th>
+                        <th></th>
+                     </tr>
+                  </thead>
+                  <tbody id="table-body">
+                     <tr>
+                        <td>1</td>
+                        <td>
+                           Lorem ipsum dolor sit amet, consectetur adipiscing
+                           elit. Proin luctus magna ac dapibus malesuada.
+                           Suspendisse ac imperdiet tellus. Duis posuere.
+                        </td>
+                        <td>2023-10-15</td>
+                        <td>
+                           <input
+                              type="checkbox"
+                              name="status"
+                              class="cbx-status"
+                           />
+                        </td>
+                        <td>
+                           <button class="btn-delete">
+                              <i class="fa-solid fa-trash"></i>
+                           </button>
+                        </td>
+                     </tr>
+                  </tbody>
                </table>
             </div>
          </div>
@@ -78,5 +82,6 @@
       <footer class="footer">
          <p>2025 © fireeemaan</p>
       </footer>
+      <script src="js/script.js"></script>
    </body>
 </html>
